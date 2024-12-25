@@ -525,6 +525,9 @@ footer{
     .service .row{
         align-items: center;
     }
+    .service-item{
+        height: auto;
+    }
 }
 
 .dropdown-content {
