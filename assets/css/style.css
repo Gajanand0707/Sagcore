@@ -12,7 +12,7 @@ img {
 }
 
 body h1 {
-    font-size: 72px;
+    font-size: 50px;
     font-weight: 600;
     line-height: 1em;
     font-family: "PT Serif", serif;
@@ -21,7 +21,7 @@ body h1 {
 body h2 {
     position: relative;
     display: inline-block;
-    font-size: 72px;
+    font-size: 40px;
     color: #000;
     line-height: 1em;
     font-weight: 600;
@@ -32,7 +32,7 @@ body h2 {
     content: "";
     width: 60px;
     height: 2px;
-    background-color: #00479E;
+    background-color: #1e2748;
     bottom: 5px;
     right: -70px;
     position: absolute;
@@ -42,14 +42,14 @@ body h2 {
     content: "";
     width: 60px;
     height: 2px;
-    background-color: #00479E;
+    background-color: #1e2748;
     bottom: 5px;
     left: -70px;
     position: absolute;
 }
 
 body p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.4em;
     font-weight: 500;
 }
@@ -58,7 +58,7 @@ body p {
     content: "";
     width: 40px;
     height: 3px;
-    background-color: #00479E;
+    background-color: #1e2748;
     top: 13px; right: -50px;
     position: absolute;
 } */
@@ -66,37 +66,28 @@ body p {
     content: "";
     width: 40px;
     height: 3px;
-    background-color: #00479E;
+    background-color: #1e2748;
     top: 13px; left: -50px;
     position: absolute;
 } */
 .button {
     position: relative;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 30px;
     color: #ffffff;
-    padding: 11px 40px;
+    padding: 10px 30px;
     font-weight: 600;
-    border-radius: 5px;
-    background-color: #00479E;
+    border-radius: 30px;
+    background-color: #1e2748;
     overflow: hidden;
-    border: none;
+    border: 2px solid #1e2748;
 }
 
-.navbtn {
-    position: relative;
-    font-size: 15px;
-    line-height: 24px;
-    color: #ab7442;
-    padding: 11px 25px ;
-    font-weight: 600;
-    border-radius: 5px;
-    border: 3px solid #ab7442;
-    overflow: hidden;
+.button:hover {
+    background-color: #ffffff;
+    color: #1e2748;
     background-color: transparent;
-    margin-left: 20px;
     transition: 0.5s all;
-
 }
 
 .body-text {
@@ -107,7 +98,7 @@ body p {
 }
 
 section {
-    padding: 100px 16px;
+    padding: 80px 16px;
     overflow: hidden;
 }
 
@@ -116,9 +107,10 @@ section {
 }
 
 
-.navbar-brand img{
+.navbar-brand img {
     max-width: 180px;
 }
+
 .navbar-nav li a {
     position: relative;
     display: block;
@@ -130,9 +122,16 @@ section {
     line-height: 30px;
     padding: 0 0 !important;
 }
-
+.navbar {
+    transition: 0.5s all;
+    padding: 20px 0;
+}
+.fixnav {
+    box-shadow: 1px 1px 10px #1e274863;
+    padding: 5px 0;
+}
 .navbar-nav li a:hover {
-    color: #00479E !important;
+    color: #1e2748 !important;
 }
 
 .navbar-nav li a::before {
@@ -140,14 +139,15 @@ section {
     width: 0%;
     height: 1px;
     bottom: 5px;
-    background-color: #00479E;
+    background-color: #1e2748;
     right: 0px;
     position: absolute;
     transition: 0.3s all;
 }
 
 .Navbar {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 999999999999999;
 }
@@ -157,21 +157,24 @@ section {
     width: 100%;
     left: 0;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     border: none;
 }
-.navbar-toggler:focus{
+
+.navbar-toggler:focus {
     box-shadow: none;
 }
+
 .navbtn {
     position: relative;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
-    color: #00479E;
-    padding: 11px 30px 9px;
+    color: #1e2748;
+    padding: 10px 30px;
     font-weight: 600;
-    border-radius: 5px;
-    border: 3px solid #00479E;
+    border-radius: 30px;
+    border: 2px solid #1e2748;
     overflow: hidden;
     background-color: transparent;
     margin-left: 20px;
@@ -180,7 +183,7 @@ section {
 }
 
 .navbtn:hover {
-    background-color: #00479E;
+    background-color: #1e2748;
     color: #fff;
 }
 
@@ -208,11 +211,12 @@ section {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image:linear-gradient(90deg, #fff 30% ,transparent);
-    
+    background-image: linear-gradient(90deg, #fff 30%, transparent);
+
 }
+
 .slider-text {
-    max-width: 780px;
+    max-width: 600px;
     padding: 0 40px;
     position: relative;
     z-index: 2;
@@ -237,11 +241,13 @@ section {
 }
 
 .service-item p {
-    font-size: 16px;
+    font-size: 14px;
 }
-.service-item  h3{
+
+.service-item h3 {
     font-size: 22px;
 }
+
 .service-item a {
     position: relative;
     display: inline-block;
@@ -268,7 +274,7 @@ section {
 
 .image_Service {
     overflow: hidden;
-
+height: 50px;
 }
 
 .service-item img {
@@ -281,26 +287,31 @@ section {
 
 .service-item i {
     font-size: 40px;
-    color: #00479E;
+    color: #1e2748;
 }
+
 /* why-Choose */
-.why-choose h2{
+/* .why-choose h2{
 margin-bottom: 60px;
-}
-.choose{
+} */
+.choose {
     max-width: 300px;
     margin: 0 auto;
 }
-.choose svg{
-max-width: 50px;
-margin-bottom: 30px;
+
+.choose svg {
+    max-width: 50px;
+    margin-bottom: 30px;
 }
-.why-choose p{
+
+.why-choose p {
     font-size: 14px;
 }
-.why-choose h3{
+
+.why-choose h3 {
     font-size: 25px;
 }
+
 /* contact us */
 .form input,
 .form textarea {
@@ -323,7 +334,7 @@ margin-bottom: 30px;
 .contact-form {
     border-radius: 10px;
     overflow: hidden;
-    background-color: #00479e;
+    background-color: #1e2748;
 }
 
 .form button {
@@ -331,6 +342,11 @@ margin-bottom: 30px;
     margin: 0;
     padding: 10px 30px;
     color: #fff;
+}
+
+.form button:hover {
+    color: #1e2748;
+    background-color: #fff;
 }
 
 .footer {
@@ -343,7 +359,7 @@ margin-bottom: 30px;
 
 .main-footer {
     padding: 50px 16px;
-    background-color: #00479e;
+    background-color: #1e2748;
     background-image: url(../assests//images/slider-image-01.jpg);
     background-size: cover;
     position: relative;
@@ -382,21 +398,52 @@ margin-bottom: 30px;
     font-size: 20px;
 }
 
+.footer-link a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+
+.footer-link ul {
+    padding: 0;
+}
+
+.footer-link ul li {
+    list-style: none;
+}
+
+.footer-logo p {
+    font-size: 12px;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    margin-bottom: 14px;
+}
+
 @media (max-width:768px) {
     body h1 {
-        font-size: 40px;
+        font-size: 35px;
+        line-height: 45px;
     }
 
     body h2 {
-        font-size: 35px;
+        font-size: 30px;
     }
-
+body p{
+    font-size: 16px;
+}
     section {
         padding: 50px 16px;
     }
 
     .slider-text {
         padding: 0 20px;
+    }
+
+    .slider-item-text {
+        height: auto;
+        padding: 100px 0;
     }
 
     .navbar-collapse {
@@ -422,7 +469,32 @@ margin-bottom: 30px;
         width: 100%;
         padding: 40px;
     }
-    .why-choose h2{
+
+    .why-choose h2 {
         margin-bottom: 30px;
-        }
+    }
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.navbar-nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px !important;
+    text-decoration: none;
+    display: block;
+}
+
+/* .dropdown:hover .dropdown-content {
+    display: block;
+} */
+
+.nav-item li {
+    list-style: none;
 }

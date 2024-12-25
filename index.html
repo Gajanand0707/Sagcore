@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    rel="stylesheet">
   <link rel="icon" href="./assets/image/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <link
@@ -22,7 +23,7 @@
 
 <body>
   <div class='Navbar'>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav id="navbar-scroll" class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container">
         <div class="navbar-brand"><img src="./assets/image/Logo.svg" alt='Navbar' /></div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -46,11 +47,19 @@
             <!-- <li class="nav-item">
               <a class="nav-link" href="#Clientsays">Client</a>
             </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#contact">Expertise</a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#contact">Expertise</a>
+            </li> -->
           </ul>
-          <div class='buttons'><button class='navbtn'>Appointment</button></div>
+          <div class='buttons'><button class='navbtn'>Contact us</button></div>
 
         </div>
       </div>
@@ -63,8 +72,8 @@
         <div class="slider-item-text ">
           <div class="container">
             <div class="slider-text  text-dark">
-              <p class="sub-title position-relative d-inline ">Welcome To Sagcore</p>
-              <h1 class="my-4">We give solution to<br>need your carpenter</h1>
+              <!-- <p class="sub-title position-relative d-inline">Welcome To Sagcore</p> -->
+              <h1 class="my-4">We give solution to need your carpenter</h1>
               <p>From 1984, we have worked tirelessly to earn our reputation for quality and dependability in all wooden
                 products we offer.</p>
               <button class="button mt-4">Check Service</button>
@@ -77,8 +86,8 @@
         <div class="slider-item-text">
           <div class="container">
             <div class="slider-text text-dark">
-              <p class="sub-title position-relative d-inline">Welcome To Sagcore</p>
-              <h1 class="my-4">Quality Wooden<br>On Your Demand</h1>
+              <!-- <p class="sub-title position-relative d-inline">Welcome To Sagcore</p> -->
+              <h1 class="my-4">Quality Wooden On Your Demand</h1>
               <p>From 1984, we have worked tirelessly to earn our reputation for quality and dependability in all wooden
                 products we offer.</p>
               <button class="button mt-4">Check Service</button>
@@ -109,8 +118,9 @@
             <div class='image_Service'>
               <i class="bi bi-globe"></i>
             </div>
-            <h3 class='mt-4'>Web App Development </h3>
-            <p class='my-3'>Techbit Provides Efficient, cost-effective, solutions that deliver precisely to your requirement, budget, and schedule have been the hallmark of our work.
+            <h3 class='mt-2'>Web App Development </h3>
+            <p class='my-3'>Techbit Provides Efficient, cost-effective, solutions that deliver precisely to your
+              requirement, budget, and schedule have been the hallmark of our work.
             </p>
             <a href='#'>Read More</a>
           </div>
@@ -120,8 +130,9 @@
             <div class='image_Service'>
               <i class="bi bi-phone"></i>
             </div>
-            <h3 class='mt-4'>Mobile App Development</h3>
-            <p class='my-3'>Whether it’s your first or fifth app idea, Techbit can help you bring it to life! Having gained years of experience in mobile application development.
+            <h3 class='mt-2'>Mobile App Development</h3>
+            <p class='my-3'>Whether it’s your first or fifth app idea, Techbit can help you bring it to life! Having
+              gained years of experience in mobile application development.
             </p>
             <a href='#'>Read More</a>
           </div>
@@ -131,8 +142,9 @@
             <div class='image_Service'>
               <i class="bi bi-cloud-fill"></i>
             </div>
-            <h3 class='mt-4'>Cloud App Development</h3>
-            <p class='my-3'>Cloud computing has ruled the business technology for a long period, and Techbit has spent that period in building amazing cloud application and improvement.
+            <h3 class='mt-2'>Cloud App Development</h3>
+            <p class='my-3'>Cloud computing has ruled the business technology for a long period, and Techbit has spent
+              that period in building amazing cloud application and improvement.
             </p>
             <a href='#'>Read More</a>
           </div>
@@ -142,8 +154,9 @@
             <div class='image_Service'>
               <i class="bi bi-stack"></i>
             </div>
-            <h3 class='mt-4'>Full Stack Developers</h3>
-            <p class='my-3'>Techbit Solution offers Full Stack development services including frontend, backend, database management, and all that it takes for a complete development setup.
+            <h3 class='mt-3'>Full Stack Developers</h3>
+            <p class='my-3'>Techbit Solution offers Full Stack development services including frontend, backend,
+              database management, and all that it takes for a complete development setup.
             </p>
             <a href='#'>Read More</a>
           </div>
@@ -151,11 +164,10 @@
         <div class="col-md-4">
           <div class='service-item '>
             <i class='fa fa-laptop-code'></i>
-            <div class='image_Service'>
-            </div>
-            <h3 class='mt-4'>Software Quality Assurance</h3>
-            <p class='my-3'>Techbit QA services create robust control on your app, monitor it at every stage of development, and provide you with all the essential information.
-           </p>
+                    <h3 class='mt-3'>Software Quality Assurance</h3>
+            <p class='my-3'>Techbit QA services create robust control on your app, monitor it at every stage of
+              development, and provide you with all the essential information.
+            </p>
             <a href='#'>Read More</a>
           </div>
         </div>
@@ -164,13 +176,14 @@
             <div class='image_Service'>
               <i class='fa fa-bezier-curve'></i>
             </div>
-            <h3 class='mt-4'>Graphic & Web Designing</h3>
-            <p class='my-3'>We can help in a logo, flyers, business cards, advertising, or all your website for highest possible quality to draw attention and inspire confidence in your brand.
+            <h3 class='mt-3'>Graphic & Web Designing</h3>
+            <p class='my-3'>We can help in a logo, flyers, business cards, advertising, or all your website for highest
+              possible quality to draw attention and inspire confidence in your brand.
             </p>
             <a href='#'>Read More</a>
           </div>
         </div>
-        
+
 
       </div>
     </div>
@@ -179,42 +192,73 @@
   </section>
 
   <!-- Why Choose Us -->
-   <section class="why-choose">
-    <div class="container text-center">
-        <h2>Why Choose Us</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="choose">
-              <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M46.9,18.7h-8.1c-1.8,0-3.2,1.4-3.2,3.2V22v1.9h-7.5V8.1c0-0.5-0.5-1-1-1H16.6V5.2c0-1.8-1.4-3.2-3.2-3.2 H5.3C3.6,2,2.1,3.4,2.1,5.2v8.1c0,1.8,1.4,3.2,3.2,3.2h8.1c1.8,0,3.2-1.4,3.2-3.2v-1.9H24v12.5h-7.4V22v0c0-1.8-1.4-3.2-3.2-3.2H5.3 c-1.8,0-3.2,1.4-3.2,3.2v0v8v0c0,1.8,1.4,3.2,3.2,3.2h8.1c1.8,0,3.2-1.4,3.2-3.2v0v-1.9H24v12.5h-7.4v-1.8c0-1.8-1.4-3.2-3.2-3.2 H5.3c-1.8,0-3.2,1.4-3.2,3.2v8.1c0,1.8,1.4,3.2,3.2,3.2h8.1c1.8,0,3.2-1.4,3.2-3.2v-1.9h10.6c0.6,0,1-0.6,1-1V28.2h7.5v1.8V30 c0,1.8,1.4,3.2,3.2,3.2h8.1c1.8,0,3.2-1.4,3.2-3.2v-0.1V22v-0.1C50.1,20.1,48.7,18.7,46.9,18.7z M12.5,12.4H6.2V6h6.3V12.4z M12.5,22.8v6.3H6.2v-6.3H12.5z M12.5,46H6.2v-6.3h6.3V46z M46.1,22.8v6.3h-6.3v-6.3H46.1z"></path> </g></svg>
+  <section class="why-choose">
+    <div class="container">
+      <div class='row mb-5 align-items-center'>
+        <div class='col-md-6'>
+          <h2 class='linesingle'>Why Choose Us</h2>
+          <p>What We Provide For You check now and deside it
+            do you want now this</p>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="choose">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path d="M7 8L3 11.6923L7 16M17 8L21 11.6923L17 16M14 4L10 20" stroke="#000000" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"></path>
+              </g>
+            </svg>
+            <h3>Development </h3>
+            <p>We don’t get started right away. We organize, plan, and draw up each phase of your project carefully.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="choose">
+            <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" enable-background="new 0 0 52 52"
+              xml:space="preserve">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M46.9,18.7h-8.1c-1.8,0-3.2,1.4-3.2,3.2V22v1.9h-7.5V8.1c0-0.5-0.5-1-1-1H16.6V5.2c0-1.8-1.4-3.2-3.2-3.2 H5.3C3.6,2,2.1,3.4,2.1,5.2v8.1c0,1.8,1.4,3.2,3.2,3.2h8.1c1.8,0,3.2-1.4,3.2-3.2v-1.9H24v12.5h-7.4V22v0c0-1.8-1.4-3.2-3.2-3.2H5.3 c-1.8,0-3.2,1.4-3.2,3.2v0v8v0c0,1.8,1.4,3.2,3.2,3.2h8.1c1.8,0,3.2-1.4,3.2-3.2v0v-1.9H24v12.5h-7.4v-1.8c0-1.8-1.4-3.2-3.2-3.2 H5.3c-1.8,0-3.2,1.4-3.2,3.2v8.1c0,1.8,1.4,3.2,3.2,3.2h8.1c1.8,0,3.2-1.4,3.2-3.2v-1.9h10.6c0.6,0,1-0.6,1-1V28.2h7.5v1.8V30 c0,1.8,1.4,3.2,3.2,3.2h8.1c1.8,0,3.2-1.4,3.2-3.2v-0.1V22v-0.1C50.1,20.1,48.7,18.7,46.9,18.7z M12.5,12.4H6.2V6h6.3V12.4z M12.5,22.8v6.3H6.2v-6.3H12.5z M12.5,46H6.2v-6.3h6.3V46z M46.1,22.8v6.3h-6.3v-6.3H46.1z">
+                </path>
+              </g>
+            </svg>
             <h3>Strategy</h3>
             <p>We don’t get started right away. We organize, plan, and draw up each phase of your project carefully.</p>
           </div>
-          </div>
-          <div class="col-md-4">
-            <div class="choose">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 8L3 11.6923L7 16M17 8L21 11.6923L17 16M14 4L10 20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-            <h3>Development       </h3>
-            <p>We don’t get started right away. We organize, plan, and draw up each phase of your project carefully.</p>
-          </div>
-          </div>
-          <div class="col-md-4">
-            <div class="choose">
-              <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M46.9,18.7h-8.1c-1.8,0-3.2,1.4-3.2,3.2V22v1.9h-7.5V8.1c0-0.5-0.5-1-1-1H16.6V5.2c0-1.8-1.4-3.2-3.2-3.2 H5.3C3.6,2,2.1,3.4,2.1,5.2v8.1c0,1.8,1.4,3.2,3.2,3.2h8.1c1.8,0,3.2-1.4,3.2-3.2v-1.9H24v12.5h-7.4V22v0c0-1.8-1.4-3.2-3.2-3.2H5.3 c-1.8,0-3.2,1.4-3.2,3.2v0v8v0c0,1.8,1.4,3.2,3.2,3.2h8.1c1.8,0,3.2-1.4,3.2-3.2v0v-1.9H24v12.5h-7.4v-1.8c0-1.8-1.4-3.2-3.2-3.2 H5.3c-1.8,0-3.2,1.4-3.2,3.2v8.1c0,1.8,1.4,3.2,3.2,3.2h8.1c1.8,0,3.2-1.4,3.2-3.2v-1.9h10.6c0.6,0,1-0.6,1-1V28.2h7.5v1.8V30 c0,1.8,1.4,3.2,3.2,3.2h8.1c1.8,0,3.2-1.4,3.2-3.2v-0.1V22v-0.1C50.1,20.1,48.7,18.7,46.9,18.7z M12.5,12.4H6.2V6h6.3V12.4z M12.5,22.8v6.3H6.2v-6.3H12.5z M12.5,46H6.2v-6.3h6.3V46z M46.1,22.8v6.3h-6.3v-6.3H46.1z"></path> </g></svg>
+        </div>
+        <div class="col-md-4">
+          <div class="choose">
+            <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" enable-background="new 0 0 52 52"
+              xml:space="preserve">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M46.9,18.7h-8.1c-1.8,0-3.2,1.4-3.2,3.2V22v1.9h-7.5V8.1c0-0.5-0.5-1-1-1H16.6V5.2c0-1.8-1.4-3.2-3.2-3.2 H5.3C3.6,2,2.1,3.4,2.1,5.2v8.1c0,1.8,1.4,3.2,3.2,3.2h8.1c1.8,0,3.2-1.4,3.2-3.2v-1.9H24v12.5h-7.4V22v0c0-1.8-1.4-3.2-3.2-3.2H5.3 c-1.8,0-3.2,1.4-3.2,3.2v0v8v0c0,1.8,1.4,3.2,3.2,3.2h8.1c1.8,0,3.2-1.4,3.2-3.2v0v-1.9H24v12.5h-7.4v-1.8c0-1.8-1.4-3.2-3.2-3.2 H5.3c-1.8,0-3.2,1.4-3.2,3.2v8.1c0,1.8,1.4,3.2,3.2,3.2h8.1c1.8,0,3.2-1.4,3.2-3.2v-1.9h10.6c0.6,0,1-0.6,1-1V28.2h7.5v1.8V30 c0,1.8,1.4,3.2,3.2,3.2h8.1c1.8,0,3.2-1.4,3.2-3.2v-0.1V22v-0.1C50.1,20.1,48.7,18.7,46.9,18.7z M12.5,12.4H6.2V6h6.3V12.4z M12.5,22.8v6.3H6.2v-6.3H12.5z M12.5,46H6.2v-6.3h6.3V46z M46.1,22.8v6.3h-6.3v-6.3H46.1z">
+                </path>
+              </g>
+            </svg>
 
-            <h3>Depuration            </h3>
+            <h3>Depuration </h3>
             <p>We don’t get started right away. We organize, plan, and draw up each phase of your project carefully.</p>
-          </div>
           </div>
         </div>
+      </div>
     </div>
-   </section>
+  </section>
 
   <!-- Contact -->
   <section class='contact' id='contact'>
     <div class='container'>
       <div class='row mb-5 align-items-center'>
         <div class='col-md-6'>
-          <h2 class='linesingle mb-3'>Contact Us</h2>
+          <h2 class='linesingle'>Contact Us</h2>
           <p>What We Provide For You check now and deside it
             do you want now this</p>
         </div>
@@ -243,6 +287,7 @@
     </div>
   </section>
   <!-- footer -->
+
   <div class='main-footer'>
     <div class='footer text-center'>
       <img src="./assets/image/Logo.svg" alt='Logo' />
@@ -257,6 +302,49 @@
       </div>
     </div>
   </div>
+  <footer class="my-5">
+    <div class="container">
+      <div class="footer-link">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footer-logo"><img src="./assets/image/Logo.svg" alt='Navbar' />
+            <p>What We Provide For You check now and deside it</p>
+          </div>
+          </div>
+          <div class="col-md-3">
+            <h5>Expertise</h5>
+            <ul>
+              <li><a href=""> ASP.NET MVC </a></li>
+              <li><a href=""> ASP.NET MVC </a></li>
+              <li><a href=""> ASP.NET MVC </a></li>
+              <li><a href=""> ASP.NET MVC </a></li>
+            </ul>
+
+          </div>
+          <div class="col-md-3">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
@@ -279,11 +367,24 @@
     });
   </script>
   <script>
+    (function () {
+      const navbar = document.getElementById('navbar-scroll');
+          window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.add('fixnav');
+        } else {
+          navbar.classList.remove('fixnav');
+        }
+      });
+    })();
+  </script>
+
+  <script>
     document.addEventListener("DOMContentLoaded", () => {
       const navLinks = document.querySelectorAll(".nav-link");
       const navbarToggler = document.querySelector(".navbar-toggler");
       const navbarCollapse = document.querySelector(".navbar-collapse");
-  
+
       navLinks.forEach(link => {
         link.addEventListener("click", () => {
           // Close the menu if it's currently expanded
@@ -294,7 +395,7 @@
       });
     });
   </script>
-  
+
 </body>
 
 </html>
